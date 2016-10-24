@@ -26,6 +26,7 @@ class Auth extends CI_Controller {
     //checking session userdata
     if($this->apps->user_id())
     {
+      //jika session sudah terdaftar, alihkan dashboard
       redirect('admin/dashboard');
     }else{
       //create condition form validation
@@ -46,18 +47,18 @@ class Auth extends CI_Controller {
         $this->load->view('admin/auth', $data);
       }else{
         //get data form and cretae a variable
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
+        $username = $this->input->post('username', TRUE);
+        $password = SHA1(MD5(MD5(SHA1($this->input->post('password', TRUE)))));
         //create variable and checking via model apps
         $checking = $this->apps->login('tbl_user', array('username' => $username), array('password' => $password));
         //checking variable $checking
         if($checking != FALSE)
         {
           //loop data
-          foreach($check as $user)
+          foreach($checking as $user)
           {
             //create session data
-            $this->session->set_serdata(array(
+            $this->session->set_userdata(array(
               'user_id'   => $user->id_user,
               'username'  => $user->username,
               'password'  => $user->password,

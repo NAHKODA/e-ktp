@@ -14,12 +14,39 @@ class Dashboard extends CI_Controller {
   function __construct()
   {
     parent::__construct();
-    //put code here
+    //load model apps
+    $this->load->model('apps');
   }
 
   //create function index
 	public function index()
 	{
-    echo 'this is dashboard';
+    //checking session user
+    if($this->apps->user_id())
+    {
+        echo 'this is dashboard';
+    }else{
+        //session not registered
+        show_404();
+        return FALSE;
+    }
 	}
+
+  //create function logout System
+  public function logout()
+  {
+    //checking session user
+    if($this->apps->user_id())
+    {
+      //destroy session userdata
+      $this->apps->logout();
+      //redirect Login
+      redirect('admin/auth/');
+    }else{
+      //session not registered
+      show_404();
+      return FALSE;
+    }
+  }
+
 }
