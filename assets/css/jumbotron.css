@@ -1,0 +1,342 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+/*********************
+  Roboto font
+**********************/
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.html") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.html") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.html") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.html") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.html") format("truetype");
+  font-weight: 700;
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 7px;
+}
+
+.penandaku-navbar {
+  background-color: #f5f5f5;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.penandaku-logo {
+  margin-top: 5px;
+  height: 40px;
+}
+
+.penandaku-form {
+  height: 45px;
+  font-family: 'Roboto';
+}
+
+.penandaku-btn-register {
+  padding: 0.55em 1em;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 2.0;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #6cc644;
+    background-image: -webkit-linear-gradient(#7bcc58, #60b838);
+    background-image: linear-gradient(#7bcc58, #60b838);
+    border-color: #55a532;
+}
+
+.penandaku-btn-login {
+  padding: 0.55em 1em;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.0;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #6cc644;
+    background-image: -webkit-linear-gradient(#7bcc58, #60b838);
+    background-image: linear-gradient(#7bcc58, #60b838);
+    border-color: #55a532;
+}
+
+.penandaku-btn-join {
+  padding: 0.55em 1em;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.0;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #6cc644;
+    background-image: -webkit-linear-gradient(#7bcc58, #60b838);
+    background-image: linear-gradient(#7bcc58, #60b838);
+    border-color: #55a532;
+}
+
+.penandaku-btn-reset {
+  padding: 0.55em 1em;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.0;
+    color: #fff;
+    width: 100%;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #6cc644;
+    background-image: -webkit-linear-gradient(#7bcc58, #60b838);
+    background-image: linear-gradient(#7bcc58, #60b838);
+    border-color: #55a532;
+}
+
+.create-account {
+  padding: 15px 20px;
+  text-align: center;
+  border: 1px solid #d8dee2;
+  border-radius: 5px;
+}
+
+.penandaku-note-register {
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.penandaku-tentang {
+  font-family: 'Roboto';
+}
+
+.penandaku-tentang-image {
+  background-image: url('../img/penandaku-laptop.png');
+  width: 500px;
+
+}
+
+.penandaku-batas {
+  height: 2px;
+  margin: 40px 0;
+  clear: both;
+  background-image: -webkit-linear-gradient(left, #b8e1ff 33.3333%, #fcd2c5 33.3333%, #fcd2c5 66.6666%, #e0c5eb 66.6666%);
+  background-image: linear-gradient(to right, #b8e1ff 33.3333%, #fcd2c5 33.3333%, #fcd2c5 66.6666%, #e0c5eb 66.6666%);
+  border: 0;
+}
+
+.main-footer {
+  padding-bottom: 120px;
+      background-color: #fff;
+      background-image: url(https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xaf1/t39.2365-6/11057196_396547827217374_525513866_n.png);
+      background-size: 980px auto;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+}
+
+.active-panel-member {
+  z-index: 2;
+  color: #fff;
+  background-color: transparent;;;
+  border: 1px solid #ddd;
+  border-left: 3px solid #66AE53;
+}
+
+.penandaku-author {
+  margin-top: -6px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+}
+
+.about-page {
+  padding-top: 350px;
+  padding-bottom: 48px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.feedback-page {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.feedback-title-top {
+  font-family: 'Roboto';
+  font-size: 40px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.feedback-descriptions-top {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.feedback-title {
+  font-family: 'Roboto';
+  color: #333;
+  font-weight: 300;
+}
+
+.feedback-descriptions {
+  font-family: 'Roboto';
+  color: #333;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.bug-page {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.bug-title-top {
+  font-family: 'Roboto';
+  font-size: 40px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.bug-descriptions-top {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.bug-title {
+  font-family: 'Roboto';
+  color: #333;
+  font-weight: 300;
+}
+
+.bug-descriptions {
+  font-family: 'Roboto';
+  color: #333;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.statics-page {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.statics-title {
+  font-family: 'Roboto';
+  color: #333;
+  font-size: 20px;
+}
+
+.login-logo {
+  text-align: center;
+}
+
+.error-login {
+  font-family: 'Roboto';
+}
+
+.button-verify {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  margin-bottom: 25px;
+}
+.card span.card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+}
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+  z-index: -1;
+}
+.card .card-image span.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+.card .card-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+.card .card-content span.card-title {
+  line-height: 48px;
+}
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+}
+.card .card-action a {
+  color: #ffab40;
+  margin-right: 16px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.card .card-action a:hover {
+  color: #ffd8a6;
+  text-decoration: none;
+}

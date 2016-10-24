@@ -32,13 +32,15 @@ class Auth extends CI_Controller {
       $this->form_validation->set_rules('username', 'Username', 'required');
       $this->form_validation->set_rules('password', 'Password', 'required');
       //cretae message form validation
-      $this->form_validation->set_message('required', '{field} still empety.');
+      $this->form_validation->set_message('required', '<div class="alert alert-danger" style="font-family:Roboto">
+                                                          <i class="fa fa-exclamation-circle"></i> {field} harus diisi.
+                                                       </div>');
       //condition checking form validation
       if($this->form_validation->run() == FALSE)
       {
         //create variable data
         $data = array(
-                  'title' => ''
+                  'title' => 'Login - E-KTP System'
         );
         //load view and parsing data
         $this->load->view('admin/auth', $data);
