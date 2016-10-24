@@ -67,6 +67,16 @@ class Auth extends CI_Controller {
             //redirect ke dashboard
             redirect('admin/dashboard');
           }
+        }else{
+          //create variable data
+          $data = array(
+                    'title' => 'Login - E-KTP System',
+                    'error' => '<div class="alert alert-danger" style="font-family:Roboto">
+                                  <i class="fa fa-exclamation-circle"></i> Username atau Password Anda salah.
+                                </div>'
+          );
+          //load view and parsing data
+          $this->load->view('admin/auth', $data);
         }
       }
     }

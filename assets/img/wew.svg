@@ -16,11 +16,11 @@
    style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
    viewBox="0 0 1729.9099 345.98198"
    id="svg2"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="wew.svg"><metadata
      id="metadata46"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -29,16 +29,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1280"
+     inkscape:window-height="702"
      id="namedview44"
      showgrid="false"
      units="px"
      inkscape:zoom="0.55981979"
      inkscape:cx="188.8738"
-     inkscape:cy="78.992552"
+     inkscape:cy="7.5409872"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" /><defs
      id="defs4"><style
@@ -365,7 +365,7 @@
          y="522.8739">logo disini</tspan></text>
 </g><g
      id="g5163"
-     transform="translate(6.7891856,6.1114131)"><g
+     transform="translate(336.40191,-714.91649)"><g
        transform="matrix(0.31779654,0,0,0.31779654,15.488411,212.91685)"
        id="g5044-9"
        style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><circle
@@ -425,4 +425,17 @@
          sodipodi:role="line"><tspan
    id="tspan5157"
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#333333;fill-opacity:1">PENANDA</tspan> KU</tspan></text>
-</g></svg>
+</g><text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:230.65466309px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="30.901196"
+     y="254.51074"
+     id="text3586"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3588"
+       x="30.901196"
+       y="254.51074"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:230.65466309px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start"
+   id="tspan3590">E-KTP</tspan> System</tspan></text>
+</svg>

@@ -38,7 +38,7 @@
                   <?php echo form_error('username'); ?>
                 </div>
                 <div class="form-group">
-                  <label style="font-weight:normal">Password <a href="<?php print base_url() ?>forgot-password/">(forgot password)</a></label>
+                  <label style="font-weight:normal">Password</label>
                   <input type="password" name="password" class="form-control" value="<?php echo set_value('password') ?>" placeholder="Enter Password">
                   <?php echo form_error('password'); ?>
                 </div>

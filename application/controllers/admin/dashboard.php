@@ -24,7 +24,16 @@ class Dashboard extends CI_Controller {
     //checking session user
     if($this->apps->user_id())
     {
-        echo 'this is dashboard';
+        //create variable data array
+        $data = array(
+          'title'     => 'Dashboard &rsaquo; E-KTP System',
+          'dashboard' => TRUE,
+        );
+        //load view and parsing data
+        $this->load->view('admin/part/header', $data);
+        $this->load->view('admin/part/sidebar');
+        $this->load->view('admin/layout/dashboard');
+        $this->load->view('admin/part/footer');
     }else{
         //session not registered
         show_404();
