@@ -1,6 +1,6 @@
 <div class="col-md-9">
   <div class="panel panel-default">
-    <div class="panel-heading"><i class="fa fa-folder-open"></i> Form E-KTP</div>
+    <div class="panel-heading"><i class="fa fa-bookmark"></i> Form E-KTP</div>
     <div class="panel-body">
       <?php
         $attributes = array('id' => 'frm_bookmark');
