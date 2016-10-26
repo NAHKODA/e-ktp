@@ -66,37 +66,69 @@ class Ktp extends CI_Controller {
       $this->form_validation->set_message('required', '<div class="alert alert-danger" style="font-family:Roboto">
                                                           <i class="fa fa-exclamation-circle"></i> {field} harus diisi.
                                                       </div>');
-      //create variable data array
-      $data = array(
-        'title'     => 'Tambah Data E-KTP &rsaquo; E-KTP System',
-        'ktp'       => TRUE,
-      );
-      //create variable subdata array
-      $sub_data = array(
-        'type'            => 'tambah',
-        'nik'             => '',
-        'nama'            => '',
-        'ttl'             => '',
-        'jk'              => '',
-        'alamat'          => '',
-        'rtrw'            => '',
-        'keldes'          => '',
-        'kecamatan'       => '',
-        'agama'           => '',
-        'status_kawin'    => '',
-        'pekerjaan'       => '',
-        'kewarganegaraan' => '',
-        'berlaku'         => ''
-      );
-      //load view and parsing data
-      $this->load->view('admin/part/header', $data);
-      $this->load->view('admin/part/sidebar', $sub_data);
-      $this->load->view('admin/layout/ktp/form_ktp');
-      $this->load->view('admin/part/footer');
+      //checking form validation
+      if($this->form_validation->run() != FALSE)
+      {
+        $nik = $this->input->post('nik');
+        //check NIK
+        $checking = $this->apps->check_nik('tbl_ktp', array('nik' => $nik));
+        //condition checking
+        if($checking != FALSE)
+        {
+          //create variable data array
+          $data = array(
+            'title'     => 'Tambah Data E-KTP &rsaquo; E-KTP System',
+            'ktp'       => TRUE,
+            'error'     => '<div class="alert alert-danger" style="font-family:Roboto">
+                              <i class="fa fa-exclamation-circle"></i> NIK <strong>'.$nik.'</strong> yang anda masukkan sudah terdaftar.
+                            </div>'
+          );
+          //load view and parsing data
+          $this->load->view('admin/part/header', $data);
+          $this->load->view('admin/part/sidebar');
+          $this->load->view('admin/layout/ktp/form_tambah');
+          $this->load->view('admin/part/footer');
+        }else{
+          //create data array and get post data
+          $insert = array(
+            'nik'             => $this->input->post('nik'),
+            'nama'            => $this->input->post('nama'),
+            'ttl'             => $this->input->post('ttl'),
+            'jk'              => $this->input->post('jk'),
+            'alamat'          => $this->input->post('alamat'),
+            'rtrw'            => $this->input->post('rtrw'),
+            'keldes'          => $this->input->post('keldes'),
+            'kecamatan'       => $this->input->post('kecamatan'),
+            'agama'           => $this->input->post('agama'),
+            'status_kawin'    => $this->input->post('status_kawin'),
+            'pekerjaan'       => $this->input->post('pekerjaan'),
+            'kewarganegaraan' => $this->input->post('kewarganegaraan'),
+            'berlaku'         => $this->input->post('berlaku')
+          );
+          //insert data into database
+          $this->apps->insert('tbl_ktp', $insert);
+          //create notification with session flashdata
+          $this->session->set_flashdata('notif', '<div class="alert alert-success" style="font-family:Roboto">
+                                                    <i class="fa fa-check-circle"></i> Data berhasil disimpan.
+                                                  </div>');
+          //redirect
+          redirect('admin/ktp/');
+        }
+      }else{
+        //create variable data array
+        $data = array(
+          'title'     => 'Tambah Data E-KTP &rsaquo; E-KTP System',
+          'ktp'       => TRUE,
+        );
+        //load view and parsing data
+        $this->load->view('admin/part/header', $data);
+        $this->load->view('admin/part/sidebar');
+        $this->load->view('admin/layout/ktp/form_tambah');
+        $this->load->view('admin/part/footer');
+      }
     }else{
       show_404();
       return FALSE;
     }
   }
-
 }

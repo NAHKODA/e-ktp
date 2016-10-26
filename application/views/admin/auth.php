@@ -63,7 +63,7 @@
               $this.button('loading');
               setTimeout(function() {
                 $this.button('reset');
-              }, 800);
+              }, 1000);
       });
     </script>
   </body>

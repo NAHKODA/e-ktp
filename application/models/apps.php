@@ -47,6 +47,29 @@ class Apps extends CI_Model
 	}
 	/* end fungsi checking nik E-KTP */
 
+	/* fungsi checking NIK */
+	function check_nik($table, $field)
+	{
+		$this->db->select('nik');
+		$this->db->from($table);
+		$this->db->where($field);
+		$this->db->limit(1);
+		$query = $this->db->get();
+		if($query->num_rows() == 0){
+			return FALSE;
+		}else{
+			return TRUE;
+		}
+	}
+	/* end fungsi checking NIK */
+
+	/* fungsi insert E-KTP */
+	function insert($table, $insert)
+	{
+		$this->db->insert($table, $insert);
+	}
+	/* end fungsi insert E-KTP */
+
 	/* fungsi restrict halaman */
   function user_id()
   {

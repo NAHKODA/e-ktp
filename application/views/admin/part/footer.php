@@ -9,47 +9,12 @@
 <script src="<?php print base_url('assets/js/custom.js') ?>"></script>
 <script src="<?php print base_url('assets/js/ie10-viewport-bug-workaround.js') ?>"></script>
 <script>
-    $('.penandaku-btn-register').on('click', function() {
-        var $this = $(this);
-            $this.button('loading');
-            setTimeout(function() {
-              $this.button('reset');
-            }, 800);
-    });
-    $('.penandaku-btn-feedback').on('click', function() {
-        var $this = $(this);
-            $this.button('loading');
-            setTimeout(function() {
-              $this.button('reset');
-            }, 800);
-    });
-    $('.penandaku-btn-bug').on('click', function() {
-        var $this = $(this);
-            $this.button('loading');
-            setTimeout(function() {
-              $this.button('reset');
-            }, 800);
-    });
-    $('.penandaku-btn-label').on('click', function() {
-        var $this = $(this);
-            $this.button('loading');
-            setTimeout(function() {
-              $this.button('reset');
-            }, 800);
-    });
     $('.penandaku-btn-bookmark').on('click', function() {
         var $this = $(this);
             $this.button('loading');
             setTimeout(function() {
               $this.button('reset');
-            }, 800);
-    });
-    $('.penandaku-btn-destroy').on('click', function() {
-        var $this = $(this);
-            $this.button('loading');
-            setTimeout(function() {
-              $this.button('reset');
-            }, 800);
+            }, 1000);
     });
 </script>
 </body>

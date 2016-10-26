@@ -39,7 +39,7 @@
                   <li><a href="<?php print base_url() ?>admin/dashboard/"><i class="fa fa-home"></i> Dashboard</a></li>
                   <li><a href="<?php print base_url() ?>admin/setting/"><i class="fa fa-cogs"></i> Setting</a></li>
                   <li class="divider"></li>
-                  <li><a href="<?php print base_url() ?>member/dashboard/logout/"><i class="fa fa-sign-out"></i> Logout</a></li>
+                  <li><a href="<?php print base_url() ?>admin/dashboard/logout/"><i class="fa fa-sign-out"></i> Logout</a></li>
                 </ul>
               </li>
             </ul>
