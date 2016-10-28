@@ -15,7 +15,7 @@ class Ktp extends CI_Controller {
   {
     parent::__construct();
     //load library form validation
-    $this->load->library('form_validation');
+    $this->load->library(array('form_validation', 'pagination'));
     //load model apps
     $this->load->model('apps');
   }
@@ -26,10 +26,17 @@ class Ktp extends CI_Controller {
     //checking session user
     if($this->apps->user_id())
     {
+        $jumlah_data = $this->apps->count_all();
+        $config['base_url'] = base_url().'admin/ktp/index/';
+    		$config['total_rows'] = $jumlah_data;
+    		$config['per_page'] = 10;
+    		$from = $this->uri->segment(3);
+    		$this->pagination->initialize($config);
         //create variable data array
         $data = array(
           'title'     => 'Data E-KTP &rsaquo; E-KTP System',
           'ktp'       => TRUE,
+          'data_ktp'  => $this->apps->data($config['per_page'],$from),
         );
         //load view and parsing data
         $this->load->view('admin/part/header', $data);

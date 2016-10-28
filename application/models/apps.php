@@ -70,6 +70,20 @@ class Apps extends CI_Model
 	}
 	/* end fungsi insert E-KTP */
 
+	/* fungsi count all */
+	function count_all()
+	{
+		return $this->db->get('tbl_ktp')->num_rows();
+	}
+	/* end fungsi count all */
+
+	/* fungsi data get */
+	function data($number, $offset)
+	{
+		return $this->db->get('tbl_ktp', $number, $offset)->result();
+	}
+	/* end fungsi data get */
+
 	/* fungsi restrict halaman */
   function user_id()
   {
