@@ -105,4 +105,16 @@ class Apps extends CI_Model
 		$this->session->sess_destroy();
 	}
 	/* end fungsi logout */
+
+	function tampil_data()
+	{
+			return $this->db->get('tbl_ktp');
+	}
+
+	function tampil_data_paging($halaman,$batas)
+	{
+			$query= "SELECT * FROM tbl_ktp limit $halaman,$batas";
+			return $this->db->query($query);
+	}
+
 }

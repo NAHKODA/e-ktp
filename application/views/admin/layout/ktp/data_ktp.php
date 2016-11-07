@@ -15,8 +15,8 @@
             </tr>
           </thead>
           <?php
-      		    $no = $this->uri->segment('3') + 1;
-      		    foreach($data_ktp as $hasil){
+      		    $no = $this->uri->segment('4') + 1;
+      		    foreach($data_ktp->result() as $hasil){
       		?>
           <tbody>
             <tr>

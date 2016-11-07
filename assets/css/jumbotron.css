@@ -38,16 +38,17 @@ body {
 }
 
 .penandaku-navbar {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #333;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0px solid #e5e5e5;
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 15px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .penandaku-logo {
-  margin-top: 14px;
+  margin-top: 10px;
   height: 30px;
 }
 

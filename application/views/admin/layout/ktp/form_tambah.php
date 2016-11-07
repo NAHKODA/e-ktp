@@ -1,5 +1,5 @@
 <div class="col-md-9">
-<?php if(isset($error)) { echo $error; } ?>  
+<?php if(isset($error)) { echo $error; } ?>
   <div class="panel panel-default">
     <div class="panel-heading"><i class="fa fa-bookmark"></i> Form E-KTP</div>
     <div class="panel-body">
@@ -11,7 +11,7 @@
           <label for="fullname" style="font-family:'Roboto';font-weight:normal">
               NIK
           </label>
-          <input type="text" class="form-control" name="nik" value="<?php echo set_value('nik'); ?>"  placeholder="NIK" style="font-family:'Roboto';font-weight:normal">
+          <input type="number" class="form-control" name="nik" value="<?php echo set_value('nik'); ?>"  placeholder="NIK" style="font-family:'Roboto';font-weight:normal">
           <?php echo form_error('nik'); ?>
         </div>
 
@@ -43,7 +43,7 @@
           <label for="fullname" style="font-family:'Roboto';font-weight:normal">
               Alamat
           </label>
-          <input type="text" class="form-control" name="alamat"  placeholder="Alamat" value="<?php echo set_value('alamat'); ?>" style="font-family:'Roboto';font-weight:normal">
+          <textarea class="form-control" name="alamat" value="<?php echo set_value('alamat'); ?>" rows="6" placeholder="Alamat"><?php echo set_value('alamat'); ?></textarea>
           <?php echo form_error('alamat'); ?>
         </div>
 

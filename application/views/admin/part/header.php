@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="penandaku-logo-navbar" href="<?php print base_url() ?>">
-               <img class="penandaku-logo" src="<?php print base_url('assets/img/logo-ektp.png') ?>" />
+               <img class="penandaku-logo" src="<?php print base_url('assets/img/logo-view.png') ?>" />
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
