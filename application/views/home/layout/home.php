@@ -16,7 +16,7 @@
               <?php echo $recaptcha_html;?>
               <?php echo form_error('g-recaptcha-response'); ?>
             </div>
-            <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking..." class="penandaku-btn-login btn btn-sm btn-success">CEK NIK <i class="fa fa-search"></i></button>
+            <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking..." class="penandaku-btn-login btn btn-sm btn-success"><i class="fa fa-search"></i> CEK NIK</button>
           <?php echo form_close(); ?>
         </div>
     </div>

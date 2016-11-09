@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="<?php print base_url('assets/css/font-awesome/css/font-awesome.css') ?>">
   <link rel="stylesheet" href="<?php print base_url('assets/css/bootstrap.min.css') ?>">
-  <link rel="stylesheet" href="<?php print base_url('assets/css/ie10-viewport-bug-workaround.css') ?>">
-  <link rel="stylesheet" href="<?php print base_url('assets/css/jumbotron.css') ?>">
-  <script src="<?php print base_url('assets/js/ie-emulation-modes-warning.js') ?>"></script>
+  <link rel="stylesheet" href="<?php print base_url('assets/css/custom.css') ?>">
 </head>
   <body>
     <nav class="penandaku-navbar navbar navbar-inverse navbar-fixed-top">
@@ -55,7 +53,7 @@
                   <input type="password" name="password" placeholder="Password" class="form-control">
               </div>
                   <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Signing in..." class="penandaku-login btn btn-success" style="font-family:Roboto;font-weight:normal">Sign in</button>
-              <?php echo form_close(); ?>            
+              <?php echo form_close(); ?>
          <?php } ?>
         </div>
       </div>

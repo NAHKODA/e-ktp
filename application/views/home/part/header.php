@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="<?php print base_url('assets/css/font-awesome/css/font-awesome.css') ?>">
   <link rel="stylesheet" href="<?php print base_url('assets/css/bootstrap.min.css') ?>">
-  <link rel="stylesheet" href="<?php print base_url('assets/css/ie10-viewport-bug-workaround.css') ?>">
-  <link rel="stylesheet" href="<?php print base_url('assets/css/jumbotron.css') ?>">
-  <script src="<?php print base_url('assets/js/ie-emulation-modes-warning.js') ?>"></script>
+  <link rel="stylesheet" href="<?php print base_url('assets/css/custom.css') ?>">
 </head>
   <body>
     <nav class="penandaku-navbar navbar navbar-inverse navbar-fixed-top">
