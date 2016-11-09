@@ -50,7 +50,7 @@ class Dashboard extends CI_Controller {
       //destroy session userdata
       $this->apps->logout();
       //redirect Login
-      redirect('admin/auth/');
+      redirect('/');
     }else{
       //session not registered
       show_404();

@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="<?php print base_url('assets/css/font-awesome/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="<?php print base_url('assets/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?php print base_url('assets/css/ie10-viewport-bug-workaround.css') ?>">
-    <link rel="stylesheet" href="<?php print base_url('assets/css/jumbotron.css') ?>">
-    <script src="<?php print base_url('assets/js/ie-emulation-modes-warning.js') ?>"></script>
+    <link rel="stylesheet" href="<?php print base_url('assets/css/custom.css') ?>">
   </head>
   <body style="background-color:#f9f9f9">
     <div class="container" style="margin-top:70px">
@@ -56,7 +54,6 @@
     <script src="<?php print base_url('assets/js/jquery.min.js') ?>"></script>
     <script src="<?php print base_url('assets/js/bootstrap.min.js') ?>"></script>
     <script src="<?php print base_url('assets/js/custom.js') ?>"></script>
-    <script src="<?php print base_url('assets/js/ie10-viewport-bug-workaround.js') ?>"></script>
     <script>
       $('.penandaku-btn-login').on('click', function() {
           var $this = $(this);
