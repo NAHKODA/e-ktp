@@ -5,6 +5,7 @@
       <div class="panel-body">
         <a href="<?php print base_url() ?>admin/ktp/tambah/" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah Data</a>
         <table class="table table-bordered table-striped" style="margin-top:10px">
+          <tbody>
           <thead>
             <tr>
               <th class="text-center">No.</th>
@@ -18,13 +19,12 @@
       		    $no = $this->uri->segment('4') + 1;
       		    foreach($data_ktp->result() as $hasil){
       		?>
-          <tbody>
             <tr>
               <td class="text-center"><?php echo $no++; ?></td>
               <td class="text-center"><?php echo $hasil->nik ?></td>
               <td><?php echo $hasil->nama ?></td>
               <td class="text-center" ><?php echo $hasil->berlaku ?></td>
-              <td class="text-center"></td>
+              <td class="text-center"><?php echo anchor('admin/ktp/edit/'.$this->encryption->encode($hasil->nik), '<i class="fa fa-edit"></i> Edit') ?> || <?php echo anchor('admin/ktp/delete/'.$this->encryption->encode($hasil->nik), '<i class="fa fa-trash"></i> Delete') ?> </td>
             </tr>
             <?php } ?>
           </tbody>

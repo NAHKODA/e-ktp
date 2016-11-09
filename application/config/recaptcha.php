@@ -12,6 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *
  * @author Damar Riyadi <damar@tahutek.net>
  */
-$config['recaptcha_sitekey'] = (ENVIRONMENT === 'production') ? "6Le89gYUAAAAAIENtNE52gZXRZbtLAOA7caL2vQY" : "6Ley8wYUAAAAADpo-eH-XaQQ0dkl6_o0w0B9K0Bq";
-$config['recaptcha_secretkey'] = (ENVIRONMENT === 'production') ? "6Le89gYUAAAAACwspqCQaB17kqgaUd1juP7eURwP" : "6Ley8wYUAAAAACz7xcfXCTPSVnNJxIRk7UgNEsUN";
-$config['lang'] = "";
+ $config['recaptcha_sitekey'] = (ENVIRONMENT === 'production') ? "6Le89gYUAAAAAIENtNE52gZXRZbtLAOA7caL2vQY" : "6LfTagsUAAAAADXyz4ANBAxHzwbGbrQf0ucwPPc4";
+ $config['recaptcha_secretkey'] = (ENVIRONMENT === 'production') ? "6Le89gYUAAAAACwspqCQaB17kqgaUd1juP7eURwP" : "6LfTagsUAAAAAMH_iw0hEEaIyyW9n0UcwxLf5Tgp";
+ $config['lang'] = "id";

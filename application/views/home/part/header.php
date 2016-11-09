@@ -55,7 +55,7 @@
                   <input type="password" name="password" placeholder="Password" class="form-control">
               </div>
                   <button type="submit" id="load" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Signing in..." class="penandaku-login btn btn-success" style="font-family:Roboto;font-weight:normal">Sign in</button>
-              <?php echo form_close(); ?>            
+              <?php echo form_close(); ?>
          <?php } ?>
         </div>
       </div>

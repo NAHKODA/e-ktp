@@ -63,26 +63,28 @@ class Apps extends CI_Model
 	}
 	/* end fungsi checking NIK */
 
-	/* fungsi insert E-KTP */
-	function insert($table, $insert)
+	/* fungsi tampil data ktp */
+	function tampil_data()
 	{
-		$this->db->insert($table, $insert);
+			return $this->db->get('tbl_ktp');
 	}
-	/* end fungsi insert E-KTP */
+	/* end fungsi tampil data ktp */
 
-	/* fungsi count all */
-	function count_all()
+	/* fungsi data paging ktp */
+	function tampil_data_paging($halaman,$batas)
 	{
-		return $this->db->get('tbl_ktp')->num_rows();
+			$query = "SELECT * FROM tbl_ktp limit $halaman, $batas";
+			return $this->db->query($query);
 	}
-	/* end fungsi count all */
+	/* end fungsi data paging ktp */
 
-	/* fungsi data get */
-	function data($number, $offset)
+	/* fungsi detail edit ktp */
+	function detail_edit($nik)
 	{
-		return $this->db->get('tbl_ktp', $number, $offset)->result();
+			$nik  =   array('nik'=>$nik);
+			return $this->db->get_where('tbl_ktp',$nik);
 	}
-	/* end fungsi data get */
+	/* end fungsi detail edit ktp */
 
 	/* fungsi restrict halaman */
   function user_id()
@@ -105,16 +107,5 @@ class Apps extends CI_Model
 		$this->session->sess_destroy();
 	}
 	/* end fungsi logout */
-
-	function tampil_data()
-	{
-			return $this->db->get('tbl_ktp');
-	}
-
-	function tampil_data_paging($halaman,$batas)
-	{
-			$query= "SELECT * FROM tbl_ktp limit $halaman,$batas";
-			return $this->db->query($query);
-	}
 
 }
