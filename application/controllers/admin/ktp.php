@@ -26,6 +26,7 @@ class Ktp extends CI_Controller {
     //checking session user
     if($this->apps->user_id())
     {
+        //config pagination
         $config['base_url'] = base_url().'admin/ktp/index/';
         $config['total_rows'] = $this->apps->tampil_data()->num_rows();
         $config['per_page'] = 10;
